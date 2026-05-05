@@ -1,10 +1,10 @@
-# 🎯 Object Detection Using YOLOv8
+# Object Detection Using YOLOv8
 
 A deep learning project that performs object detection using three state-of-the-art model architectures: **YOLOv8**, **Faster R-CNN**, and **RetinaNet**. YOLOv8 is the primary model trained via the Ultralytics library, while Faster R-CNN and RetinaNet leverage Facebook's Detectron2 framework. All models are trained on a custom 52-class dataset sourced from Roboflow and evaluated using confusion matrices, precision-recall curves, and F1 curves.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── Yolov8.ipynb                  # YOLOv8 training & inference pipeline
@@ -14,7 +14,7 @@ A deep learning project that performs object detection using three state-of-the-
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 - **Source:** Custom object detection dataset downloaded from [Roboflow](https://roboflow.com/)
 - **Workspace / Project:** `alexa-fiverr / alexa-tybnf`
@@ -26,7 +26,7 @@ A deep learning project that performs object detection using three state-of-the-
 
 ---
 
-## 🧠 Model Architectures
+## Model Architectures
 
 ### 1. YOLOv8 (Primary Model)
 - **Library:** [Ultralytics](https://github.com/ultralytics/ultralytics)
@@ -90,7 +90,7 @@ Loss metrics logged per iteration and visualized interactively using **Plotly**:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category          | Libraries / Tools                          |
 |-------------------|--------------------------------------------|
@@ -105,7 +105,7 @@ Loss metrics logged per iteration and visualized interactively using **Plotly**:
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 > This project is designed to run in **Google Colab** with **GPU support** enabled.
 
@@ -149,7 +149,7 @@ Loss metrics logged per iteration and visualized interactively using **Plotly**:
 
 ---
 
-## 🔍 Inference
+## Inference
 
 ### YOLOv8 — Video Inference
 ```python
@@ -169,7 +169,7 @@ outputs = predictor(image)  # image loaded via cv2.imread()
 
 ---
 
-## 📝 Notes
+## Notes
 
 - The Roboflow dataset contains **52 object classes** spanning gym/fitness equipment based on the dataset project name and class count.
 - For Faster R-CNN video inference, per-frame detection statistics (class counts and average confidence scores) are saved to `./output/detection_stats.json`.
